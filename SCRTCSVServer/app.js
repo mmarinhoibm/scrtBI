@@ -1,5 +1,5 @@
 var http = require('http');
-var fs = require('string-format');
+var strF = require('string-format');
 
 var port = (process.env.PORT || process.env.VCAP_APP_PORT || 8888);
 
@@ -9,4 +9,3 @@ http.createServer(function (req, res) {
 }).listen(port);
 
 console.log('Server running at http://127.0.0.1:'+port);
-	
